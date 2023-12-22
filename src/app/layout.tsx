@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { lato } from '@/app/ui/fonts';
+import SideNav from '@/app/ui/sidenav';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.className} antialiased`}>{children}</body>
+      <body className={`${lato.className} antialiased`}>
+        <SideNav />
+        {children}
+      </body>
     </html>
   )
 }
