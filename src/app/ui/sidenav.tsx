@@ -7,7 +7,7 @@ import { PowerIcon } from '@heroicons/react/24/solid';
 export default function SideNav() {
   return (
     <header
-      className="w-full md:w-[7.5vmax] md:hover:w-[25.75vmax] lg:w-[7.5vh] lg:hover:w-[25.75vh] h-[10vmax] md:h-full absolute left-0 bottom-0 bg-slate-300 dark:bg-black md:shadow-md md:shadow-zinc-200 dark:md:shadow-slate-700 overflow-hidden transition-all"
+      className="w-full md:w-[7.5vmax] md:hover:w-[25.75vmax] lg:w-[7.5vh] lg:hover:w-[25.75vh] h-[10vmax] md:h-full absolute left-0 bottom-0 bg-slate-300 dark:bg-black md:shadow-md md:shadow-zinc-700 dark:md:shadow-slate-700 overflow-hidden transition-all"
     >
       <Link
         href="/"
@@ -19,13 +19,14 @@ export default function SideNav() {
           alt="Virtune logo"
           width={128}
           height={128}
+          priority
         />
         <p className={`${pattaya.className}`}>Virtune</p>
       </Link>
       <NavLinks />
       <form className="hidden md:block absolute left-0 bottom-0">
         <button
-          className="w-[25.75vmax] lg:w-[25.75vh] flex items-center text-sm text-zinc-900 dark:text-slate-500 hover:text-black dark:hover:text-white hover:bg-indigo-800 transition-all"
+          className="w-[25.75vmax] lg:w-[25.75vh] flex items-center text-sm text-zinc-500 dark:text-slate-500 hover:text-black dark:hover:text-white hover:bg-indigo-400 hover:dark:bg-indigo-800 transition-all"
         >
           <PowerIcon
             className="p-[2.25vmax] lg:p-[2.25vh] w-[7.5vmax] lg:w-[7.5vh] border-x-4 border-x-transparent transition-all"

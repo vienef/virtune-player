@@ -34,16 +34,17 @@ export default function NavLinks() {
             <Link
               href={link.href}
               className={clsx(
-                'flex items-center justify-center md:justify-start text-sm text-zinc-900 dark:text-slate-500 md:hover:bg-indigo-800 hover:text-black dark:hover:text-white transition-all',
+                'flex items-center justify-center md:justify-start text-sm md:hover:bg-indigo-400 md:hover:dark:bg-indigo-800 hover:text-black hover:dark:text-white transition-all',
                 {
                   'text-black dark:text-white': pathname === link.href,
+                  'text-zinc-500 dark:text-slate-500': pathname !== link.href,
                 },
               )}
             >
               <LinkIcon className={clsx(
                 'p-[3.5vmax] md:p-[2.25vmax] lg:p-[2.25vh] w-[10vmax] md:w-[7.5vmax] lg:w-[7.5vh] md:border-x-4 md:border-x-transparent transition-all',
                 {
-                  'md:border-l-indigo-800': pathname === link.href,
+                  'md:border-l-indigo-400 md:dark:border-l-indigo-800': pathname === link.href,
                 },
               )} />
               <p className="hidden md:block transition-all">

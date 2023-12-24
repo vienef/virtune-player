@@ -17,7 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${lato.className} antialiased`}>
         <SideNav />
-        {children}
+        <main
+          className="p-[2.5vmax] md:p-[7.5vmax] lg:p-[7.5vh] md:pl-[10vmax] lg:pl-[15vh] w-full h-[90vmax] md:h-screen"
+        >
+          {children}
+        </main>
       </body>
     </html>
   )
