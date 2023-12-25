@@ -15,7 +15,7 @@ export default function Home() {
       </p>
       <form className="w-full">
         <button
-          className="w-full md:w-fit px-[4vmax] py-[2vmax] md:px-[3vmax] md:py-[1.5vmax] lg:px-[3vh] lg:py-[1.5vh] text-base bg-indigo-400 dark:bg-indigo-800 hover:text-white hover:dark:text-black hover:bg-indigo-800 hover:dark:bg-indigo-400 rounded-full transition-all"
+          className="w-full md:w-fit px-[4vmax] py-[2vmax] md:px-[3vmax] md:py-[1.5vmax] lg:px-[3vh] lg:py-[1.5vh] text-base text-white dark:text-black bg-indigo-800 dark:bg-indigo-400 hover:text-indigo-800 hover:dark:text-indigo-400 hover:bg-white hover:dark:bg-black rounded-full transition-all"
         >
           Sign Up
         </button>
